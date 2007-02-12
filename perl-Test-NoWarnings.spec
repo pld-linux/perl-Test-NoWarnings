@@ -6,7 +6,7 @@
 %define	pdir	Test
 %define	pnam	NoWarnings
 Summary:	Test::NoWarnings - Make sure you didn't emit any warnings while testing
-Summary(pl):	Test::NoWarnings - sprawdzanie braku ostrze¿eñ podczas testów
+Summary(pl.UTF-8):   Test::NoWarnings - sprawdzanie braku ostrzeÅ¼eÅ„ podczas testÃ³w
 Name:		perl-Test-NoWarnings
 Version:	0.082
 Release:	1
@@ -35,18 +35,18 @@ If some of your tests are supposed to produce warnings then you should
 be capturing and checking them with Test::Warn, that way
 Test::NoWarnings will not see them and so not complain.
 
-%description -l pl
-W ogólno¶ci testy nie powinny generowaæ ostrze¿eñ. Ten modu³ powoduje,
-¿e wszystkie ostrze¿enia s± przechwytywane i zapisywane. Automatycznie
-dodaje dodatkowy test uruchamiany po zakoñczeniu skryptu, sprawdzaj±cy
-czy nie by³o ostrze¿eñ. Je¶li wyst±pi³y jakiekolwiek ostrze¿enia, test
-wypisze "not ok" i dane diagnostyczne, w którym miejscu, kiedy i jakie
-by³o ostrze¿enie, wraz ze ¶ladem stosu tego, co dzia³o siê w chwili
-jego wyst±pienia.
+%description -l pl.UTF-8
+W ogÃ³lnoÅ›ci testy nie powinny generowaÄ‡ ostrzeÅ¼eÅ„. Ten moduÅ‚ powoduje,
+Å¼e wszystkie ostrzeÅ¼enia sÄ… przechwytywane i zapisywane. Automatycznie
+dodaje dodatkowy test uruchamiany po zakoÅ„czeniu skryptu, sprawdzajÄ…cy
+czy nie byÅ‚o ostrzeÅ¼eÅ„. JeÅ›li wystÄ…piÅ‚y jakiekolwiek ostrzeÅ¼enia, test
+wypisze "not ok" i dane diagnostyczne, w ktÃ³rym miejscu, kiedy i jakie
+byÅ‚o ostrzeÅ¼enie, wraz ze Å›ladem stosu tego, co dziaÅ‚o siÄ™ w chwili
+jego wystÄ…pienia.
 
-Je¶li jakie¶ testy maj± wygenerowaæ ostrze¿enia, nale¿y je wy³apaæ i
-sprawdziæ przy u¿yciu Test::Warn - tak, ¿eby Test::NoWarnings ich nie
-zobaczy³.
+JeÅ›li jakieÅ› testy majÄ… wygenerowaÄ‡ ostrzeÅ¼enia, naleÅ¼y je wyÅ‚apaÄ‡ i
+sprawdziÄ‡ przy uÅ¼yciu Test::Warn - tak, Å¼eby Test::NoWarnings ich nie
+zobaczyÅ‚.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
