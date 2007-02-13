@@ -6,7 +6,7 @@
 %define	pdir	Test
 %define	pnam	NoWarnings
 Summary:	Test::NoWarnings - Make sure you didn't emit any warnings while testing
-Summary(pl.UTF-8):   Test::NoWarnings - sprawdzanie braku ostrzeżeń podczas testów
+Summary(pl.UTF-8):	Test::NoWarnings - sprawdzanie braku ostrzeżeń podczas testów
 Name:		perl-Test-NoWarnings
 Version:	0.082
 Release:	1
