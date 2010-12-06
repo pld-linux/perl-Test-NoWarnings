@@ -8,17 +8,18 @@
 Summary:	Test::NoWarnings - Make sure you didn't emit any warnings while testing
 Summary(pl.UTF-8):	Test::NoWarnings - sprawdzanie braku ostrzeżeń podczas testów
 Name:		perl-Test-NoWarnings
-Version:	0.084
-Release:	2
+Version:	1.02
+Release:	1
 License:	LGPL
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	26341294a4062e9e7d8a643485ca78d4
+Source0:	http://www.cpan.org/modules/by-module/Test/ADAMK/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	6c5ae5613c66d6b5e4f0799085571a64
 URL:		http://search.cpan.org/dist/Test-NoWarnings/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Test-Tester >= 0.103
+BuildRequires:	perl-Test-Simple >= 0.86
+BuildRequires:	perl-Test-Tester >= 0.107
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -69,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES README
-%{perl_vendorlib}/Test/*.pm
+%doc Changes README
+%{perl_vendorlib}/Test/NoWarnings.pm
 %{perl_vendorlib}/Test/NoWarnings
-%{_mandir}/man3/*
+%{_mandir}/man3/Test::NoWarnings.3pm*
