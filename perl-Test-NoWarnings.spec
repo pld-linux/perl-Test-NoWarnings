@@ -7,15 +7,16 @@
 Summary:	Test::NoWarnings - Make sure you didn't emit any warnings while testing
 Summary(pl.UTF-8):	Test::NoWarnings - sprawdzanie braku ostrzeżeń podczas testów
 Name:		perl-Test-NoWarnings
-Version:	1.04
+Version:	1.06
 Release:	1
 License:	LGPL
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Test/ADAMK/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	682ed043f7d3e38f3dfd8745fd21c49a
-URL:		http://search.cpan.org/dist/Test-NoWarnings/
+Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	e44d8b1820b45a71e59a0119120ca622
+URL:		https://metacpan.org/dist/Test-NoWarnings
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Test-Simple >= 0.86
 BuildRequires:	perl-Test-Tester >= 0.107
